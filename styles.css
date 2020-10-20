@@ -1,0 +1,66 @@
+:root {
+  --grid-cols: 0;
+  --grid-rows: 0;
+}
+
+body{
+  background-color: #ec0101;
+}
+
+#container {
+  display: grid;
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  margin: auto;
+  width: 1000px;
+  height: 450px;
+
+  /* margin-top: 50px; */
+
+}
+h1 {
+  font-family: 'Grandstander', cursive;
+  text-shadow: 2px 2px 5px white;
+  font-size: 5rem;
+  margin-top: 10px;
+  margin-bottom: 5px;
+
+}
+
+button {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 16px;
+  padding: 10px;
+  background-color: #373a40
+  color: white;
+  border-radius: 15px;
+  transition-duration: 0.5s;
+  outline: none;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+
+
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+}
+
+.grid-item {
+  border: 1px solid #ddd;
+  text-align: center;
+  background-color: yellow;
+
+
+}
+
+.buttonDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
